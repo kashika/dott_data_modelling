@@ -1,0 +1,360 @@
+2021-08-01 21:42:01.537492 (MainThread): Running with dbt=0.20.0
+2021-08-01 21:42:02.815164 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/kxj042/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-01 21:42:02.816829 (MainThread): Tracking: tracking
+2021-08-01 21:42:02.817508 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047ff490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d13a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d13d90>]}
+2021-08-01 21:42:02.833498 (MainThread): Partial parsing not enabled
+2021-08-01 21:42:02.852296 (MainThread): Parsing macros/catalog.sql
+2021-08-01 21:42:02.855014 (MainThread): Parsing macros/adapters.sql
+2021-08-01 21:42:02.890878 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-01 21:42:02.893216 (MainThread): Parsing macros/materializations/view.sql
+2021-08-01 21:42:02.894835 (MainThread): Parsing macros/materializations/table.sql
+2021-08-01 21:42:02.899299 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-01 21:42:02.910118 (MainThread): Parsing macros/core.sql
+2021-08-01 21:42:02.914634 (MainThread): Parsing macros/materializations/test.sql
+2021-08-01 21:42:02.922567 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-01 21:42:02.934002 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-01 21:42:02.935984 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-01 21:42:02.956301 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-01 21:42:02.993331 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-01 21:42:03.018086 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-01 21:42:03.020210 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-01 21:42:03.029426 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-01 21:42:03.045480 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-01 21:42:03.053698 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-01 21:42:03.060882 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-01 21:42:03.066528 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-01 21:42:03.067540 (MainThread): Parsing macros/etc/query.sql
+2021-08-01 21:42:03.068754 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-01 21:42:03.070508 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-01 21:42:03.080779 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-01 21:42:03.083027 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-01 21:42:03.085026 (MainThread): Parsing macros/adapters/common.sql
+2021-08-01 21:42:03.138782 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-01 21:42:03.140811 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-01 21:42:03.142167 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-01 21:42:03.143851 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-01 21:42:03.352795 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dott_data_modelling.example
+
+2021-08-01 21:42:03.357995 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '90500c1f-ee95-4108-9c55-1967b55bf210', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e2b850>]}
+2021-08-01 21:42:03.362163 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '90500c1f-ee95-4108-9c55-1967b55bf210', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d3b640>]}
+2021-08-01 21:42:03.362401 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 151 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-08-01 21:42:03.363114 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2021-08-01 21:42:03.367151 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d51040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105d133d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e2bb80>]}
+2021-08-01 21:42:03.367416 (MainThread): Flushing usage events
+2021-08-01 21:43:17.732716 (MainThread): Running with dbt=0.20.0
+2021-08-01 21:43:19.031015 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/kxj042/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-01 21:43:19.032840 (MainThread): Tracking: tracking
+2021-08-01 21:43:19.033276 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e7f2b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fbddd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fbdddf0>]}
+2021-08-01 21:43:19.049268 (MainThread): Partial parsing not enabled
+2021-08-01 21:43:19.070632 (MainThread): Parsing macros/catalog.sql
+2021-08-01 21:43:19.074305 (MainThread): Parsing macros/adapters.sql
+2021-08-01 21:43:19.113228 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-01 21:43:19.115620 (MainThread): Parsing macros/materializations/view.sql
+2021-08-01 21:43:19.117041 (MainThread): Parsing macros/materializations/table.sql
+2021-08-01 21:43:19.120950 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-01 21:43:19.129576 (MainThread): Parsing macros/core.sql
+2021-08-01 21:43:19.133232 (MainThread): Parsing macros/materializations/test.sql
+2021-08-01 21:43:19.139695 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-01 21:43:19.149056 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-01 21:43:19.150690 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-01 21:43:19.168887 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-01 21:43:19.227543 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-01 21:43:19.249096 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-01 21:43:19.250821 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-01 21:43:19.258487 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-01 21:43:19.273999 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-01 21:43:19.280813 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-01 21:43:19.286683 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-01 21:43:19.291208 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-01 21:43:19.292004 (MainThread): Parsing macros/etc/query.sql
+2021-08-01 21:43:19.292921 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-01 21:43:19.294922 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-01 21:43:19.303487 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-01 21:43:19.305275 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-01 21:43:19.306714 (MainThread): Parsing macros/adapters/common.sql
+2021-08-01 21:43:19.350781 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-01 21:43:19.352356 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-01 21:43:19.353409 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-01 21:43:19.354603 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-01 21:43:19.526840 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dott_data_modelling.example
+
+2021-08-01 21:43:19.531099 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c9102f46-7dc7-46d1-ba47-6cd76e6ef0e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcf79a0>]}
+2021-08-01 21:43:19.534467 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c9102f46-7dc7-46d1-ba47-6cd76e6ef0e3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fc19190>]}
+2021-08-01 21:43:19.534844 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 151 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-08-01 21:43:19.535328 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2021-08-01 21:43:19.539133 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fbdda60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fc191f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcf7cd0>]}
+2021-08-01 21:43:19.539522 (MainThread): Flushing usage events
+2021-08-01 21:46:23.480073 (MainThread): Running with dbt=0.20.0
+2021-08-01 21:46:24.728161 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/kxj042/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-01 21:46:24.729800 (MainThread): Tracking: tracking
+2021-08-01 21:46:24.730302 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eb8d340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ff7bd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ff7bd90>]}
+2021-08-01 21:46:24.746714 (MainThread): Partial parsing not enabled
+2021-08-01 21:46:24.766422 (MainThread): Parsing macros/catalog.sql
+2021-08-01 21:46:24.769098 (MainThread): Parsing macros/adapters.sql
+2021-08-01 21:46:24.802288 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-01 21:46:24.804213 (MainThread): Parsing macros/materializations/view.sql
+2021-08-01 21:46:24.805571 (MainThread): Parsing macros/materializations/table.sql
+2021-08-01 21:46:24.809396 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-01 21:46:24.818367 (MainThread): Parsing macros/core.sql
+2021-08-01 21:46:24.822068 (MainThread): Parsing macros/materializations/test.sql
+2021-08-01 21:46:24.828679 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-01 21:46:24.838362 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-01 21:46:24.839959 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-01 21:46:24.857244 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-01 21:46:24.887967 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-01 21:46:24.908283 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-01 21:46:24.910174 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-01 21:46:24.917816 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-01 21:46:24.930802 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-01 21:46:24.937280 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-01 21:46:24.943105 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-01 21:46:24.947598 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-01 21:46:24.948383 (MainThread): Parsing macros/etc/query.sql
+2021-08-01 21:46:24.949262 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-01 21:46:24.950908 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-01 21:46:24.959234 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-01 21:46:24.961429 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-01 21:46:24.962841 (MainThread): Parsing macros/adapters/common.sql
+2021-08-01 21:46:25.005640 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-01 21:46:25.007458 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-01 21:46:25.008744 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-01 21:46:25.010130 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-01 21:46:25.180721 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dott_data_modelling.example
+
+2021-08-01 21:46:25.186024 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '81cee3d4-cf6a-4742-b9c9-09d10174e7bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110092940>]}
+2021-08-01 21:46:25.189513 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '81cee3d4-cf6a-4742-b9c9-09d10174e7bd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffb4130>]}
+2021-08-01 21:46:25.189707 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 151 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-08-01 21:46:25.190167 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2021-08-01 21:46:25.193457 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ff7ba30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffb4190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110092c70>]}
+2021-08-01 21:46:25.193613 (MainThread): Flushing usage events
+2021-08-01 21:49:03.912757 (MainThread): Running with dbt=0.20.0
+2021-08-01 21:49:05.121478 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/kxj042/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-01 21:49:05.124610 (MainThread): Tracking: tracking
+2021-08-01 21:49:05.125067 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079a4250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108da9b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108da9bb0>]}
+2021-08-01 21:49:05.141298 (MainThread): Partial parsing not enabled
+2021-08-01 21:49:05.159699 (MainThread): Parsing macros/catalog.sql
+2021-08-01 21:49:05.162107 (MainThread): Parsing macros/adapters.sql
+2021-08-01 21:49:05.198260 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-01 21:49:05.200420 (MainThread): Parsing macros/materializations/view.sql
+2021-08-01 21:49:05.202126 (MainThread): Parsing macros/materializations/table.sql
+2021-08-01 21:49:05.206028 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-01 21:49:05.215134 (MainThread): Parsing macros/core.sql
+2021-08-01 21:49:05.218894 (MainThread): Parsing macros/materializations/test.sql
+2021-08-01 21:49:05.227556 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-01 21:49:05.239544 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-01 21:49:05.241254 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-01 21:49:05.259447 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-01 21:49:05.297024 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-01 21:49:05.321783 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-01 21:49:05.323794 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-01 21:49:05.332181 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-01 21:49:05.346356 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-01 21:49:05.353947 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-01 21:49:05.360504 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-01 21:49:05.365645 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-01 21:49:05.366462 (MainThread): Parsing macros/etc/query.sql
+2021-08-01 21:49:05.367611 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-01 21:49:05.369447 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-01 21:49:05.379990 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-01 21:49:05.382372 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-01 21:49:05.384382 (MainThread): Parsing macros/adapters/common.sql
+2021-08-01 21:49:05.434141 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-01 21:49:05.435963 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-01 21:49:05.437092 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-01 21:49:05.438415 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-01 21:49:05.644268 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.example
+
+2021-08-01 21:49:05.649216 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b1797f86-dc5c-498a-b6fa-f63d2ae057b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ea5790>]}
+2021-08-01 21:49:05.653620 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b1797f86-dc5c-498a-b6fa-f63d2ae057b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108dbaf10>]}
+2021-08-01 21:49:05.653920 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 151 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-08-01 21:49:05.654537 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2021-08-01 21:49:05.658101 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108da97f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108dbaeb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ea5ac0>]}
+2021-08-01 21:49:05.658302 (MainThread): Flushing usage events
+2021-08-01 21:50:03.633168 (MainThread): Running with dbt=0.20.0
+2021-08-01 21:50:04.416444 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/kxj042/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-01 21:50:04.417908 (MainThread): Tracking: tracking
+2021-08-01 21:50:04.418743 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112bd39a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113fc3eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113fc3f40>]}
+2021-08-01 21:50:04.433619 (MainThread): Partial parsing not enabled
+2021-08-01 21:50:04.444253 (MainThread): Parsing macros/catalog.sql
+2021-08-01 21:50:04.446603 (MainThread): Parsing macros/adapters.sql
+2021-08-01 21:50:04.477185 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-01 21:50:04.479779 (MainThread): Parsing macros/materializations/view.sql
+2021-08-01 21:50:04.481106 (MainThread): Parsing macros/materializations/table.sql
+2021-08-01 21:50:04.484895 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-01 21:50:04.493617 (MainThread): Parsing macros/core.sql
+2021-08-01 21:50:04.497199 (MainThread): Parsing macros/materializations/test.sql
+2021-08-01 21:50:04.503613 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-01 21:50:04.513044 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-01 21:50:04.514690 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-01 21:50:04.532115 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-01 21:50:04.562971 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-01 21:50:04.583122 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-01 21:50:04.584719 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-01 21:50:04.591859 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-01 21:50:04.605281 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-01 21:50:04.611747 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-01 21:50:04.617616 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-01 21:50:04.622024 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-01 21:50:04.622981 (MainThread): Parsing macros/etc/query.sql
+2021-08-01 21:50:04.623860 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-01 21:50:04.625263 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-01 21:50:04.633611 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-01 21:50:04.635320 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-01 21:50:04.636740 (MainThread): Parsing macros/adapters/common.sql
+2021-08-01 21:50:04.680185 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-01 21:50:04.681951 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-01 21:50:04.683419 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-01 21:50:04.684660 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-01 21:50:04.859219 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dott_data_modelling.example
+
+2021-08-01 21:50:04.863368 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3904a3d3-3823-4593-90a8-243892f401e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140cfaf0>]}
+2021-08-01 21:50:04.867862 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3904a3d3-3823-4593-90a8-243892f401e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ff91c0>]}
+2021-08-01 21:50:04.868160 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 151 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-08-01 21:50:04.868782 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2021-08-01 21:50:04.872461 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113fc3b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ff9370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140cffa0>]}
+2021-08-01 21:50:04.872629 (MainThread): Flushing usage events
+2021-08-01 21:51:52.818040 (MainThread): Running with dbt=0.20.0
+2021-08-01 21:51:54.020175 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/kxj042/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-01 21:51:54.021917 (MainThread): Tracking: tracking
+2021-08-01 21:51:54.022399 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b2a0eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c68eca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c68ed30>]}
+2021-08-01 21:51:54.037942 (MainThread): Partial parsing not enabled
+2021-08-01 21:51:54.053028 (MainThread): Parsing macros/catalog.sql
+2021-08-01 21:51:54.055862 (MainThread): Parsing macros/adapters.sql
+2021-08-01 21:51:54.089402 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-01 21:51:54.091344 (MainThread): Parsing macros/materializations/view.sql
+2021-08-01 21:51:54.092684 (MainThread): Parsing macros/materializations/table.sql
+2021-08-01 21:51:54.096417 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-01 21:51:54.105545 (MainThread): Parsing macros/core.sql
+2021-08-01 21:51:54.109327 (MainThread): Parsing macros/materializations/test.sql
+2021-08-01 21:51:54.115942 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-01 21:51:54.125353 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-01 21:51:54.126882 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-01 21:51:54.144302 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-01 21:51:54.175578 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-01 21:51:54.197010 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-01 21:51:54.198863 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-01 21:51:54.206430 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-01 21:51:54.220408 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-01 21:51:54.227200 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-01 21:51:54.235520 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-01 21:51:54.240504 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-01 21:51:54.241348 (MainThread): Parsing macros/etc/query.sql
+2021-08-01 21:51:54.242252 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-01 21:51:54.243698 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-01 21:51:54.252358 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-01 21:51:54.254134 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-01 21:51:54.255556 (MainThread): Parsing macros/adapters/common.sql
+2021-08-01 21:51:54.300630 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-01 21:51:54.302308 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-01 21:51:54.303470 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-01 21:51:54.304668 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-01 21:51:54.479527 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dott_data_modelling.example
+
+2021-08-01 21:51:54.484088 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7bc55428-0628-4001-ab03-3a3c22e52d32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c79f8e0>]}
+2021-08-01 21:51:54.489001 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7bc55428-0628-4001-ab03-3a3c22e52d32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c6c90a0>]}
+2021-08-01 21:51:54.489466 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 151 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-08-01 21:51:54.490526 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2021-08-01 21:51:54.493607 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c68e970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c6c9130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c79fc10>]}
+2021-08-01 21:51:54.493764 (MainThread): Flushing usage events
+2021-08-01 21:52:41.678613 (MainThread): Running with dbt=0.20.0
+2021-08-01 21:52:42.896874 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/kxj042/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-01 21:52:42.900152 (MainThread): Tracking: tracking
+2021-08-01 21:52:42.900939 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10753c310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108925e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108925ee0>]}
+2021-08-01 21:52:42.916921 (MainThread): Partial parsing not enabled
+2021-08-01 21:52:42.934054 (MainThread): Parsing macros/catalog.sql
+2021-08-01 21:52:42.936816 (MainThread): Parsing macros/adapters.sql
+2021-08-01 21:52:42.970187 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-01 21:52:42.972064 (MainThread): Parsing macros/materializations/view.sql
+2021-08-01 21:52:42.973389 (MainThread): Parsing macros/materializations/table.sql
+2021-08-01 21:52:42.977123 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-01 21:52:42.988753 (MainThread): Parsing macros/core.sql
+2021-08-01 21:52:42.992981 (MainThread): Parsing macros/materializations/test.sql
+2021-08-01 21:52:43.000507 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-01 21:52:43.010035 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-01 21:52:43.011587 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-01 21:52:43.029049 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-01 21:52:43.063037 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-01 21:52:43.084130 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-01 21:52:43.086941 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-01 21:52:43.095929 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-01 21:52:43.110557 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-01 21:52:43.117029 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-01 21:52:43.123139 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-01 21:52:43.127658 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-01 21:52:43.128633 (MainThread): Parsing macros/etc/query.sql
+2021-08-01 21:52:43.130248 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-01 21:52:43.132707 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-01 21:52:43.142801 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-01 21:52:43.144928 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-01 21:52:43.146637 (MainThread): Parsing macros/adapters/common.sql
+2021-08-01 21:52:43.194922 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-01 21:52:43.196868 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-01 21:52:43.198152 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-01 21:52:43.199594 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-01 21:52:43.391139 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dott_data_modelling.example
+
+2021-08-01 21:52:43.396440 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f54c16b5-9462-425e-9be3-c57b2183208b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a3ea90>]}
+2021-08-01 21:52:43.400606 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f54c16b5-9462-425e-9be3-c57b2183208b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089632e0>]}
+2021-08-01 21:52:43.400850 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 151 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-08-01 21:52:43.401410 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2021-08-01 21:52:43.404815 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108925b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1089632b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a3efd0>]}
+2021-08-01 21:52:43.405009 (MainThread): Flushing usage events
+2021-08-01 21:55:30.903552 (MainThread): Running with dbt=0.20.0
+2021-08-01 21:55:32.075308 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/kxj042/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-08-01 21:55:32.076941 (MainThread): Tracking: tracking
+2021-08-01 21:55:32.077469 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea59b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fe42fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fe42a60>]}
+2021-08-01 21:55:32.092921 (MainThread): Partial parsing not enabled
+2021-08-01 21:55:32.108702 (MainThread): Parsing macros/catalog.sql
+2021-08-01 21:55:32.111264 (MainThread): Parsing macros/adapters.sql
+2021-08-01 21:55:32.145247 (MainThread): Parsing macros/materializations/merge.sql
+2021-08-01 21:55:32.147039 (MainThread): Parsing macros/materializations/view.sql
+2021-08-01 21:55:32.148300 (MainThread): Parsing macros/materializations/table.sql
+2021-08-01 21:55:32.151842 (MainThread): Parsing macros/materializations/incremental.sql
+2021-08-01 21:55:32.160354 (MainThread): Parsing macros/core.sql
+2021-08-01 21:55:32.164322 (MainThread): Parsing macros/materializations/test.sql
+2021-08-01 21:55:32.170557 (MainThread): Parsing macros/materializations/helpers.sql
+2021-08-01 21:55:32.179779 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-08-01 21:55:32.181307 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-08-01 21:55:32.198774 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-08-01 21:55:32.229539 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-08-01 21:55:32.249799 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-08-01 21:55:32.251432 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-08-01 21:55:32.258953 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-08-01 21:55:32.272262 (MainThread): Parsing macros/materializations/table/table.sql
+2021-08-01 21:55:32.278599 (MainThread): Parsing macros/materializations/view/view.sql
+2021-08-01 21:55:32.284369 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-08-01 21:55:32.288785 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-08-01 21:55:32.289937 (MainThread): Parsing macros/etc/query.sql
+2021-08-01 21:55:32.291197 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-08-01 21:55:32.292589 (MainThread): Parsing macros/etc/datetime.sql
+2021-08-01 21:55:32.300987 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-08-01 21:55:32.302696 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-08-01 21:55:32.304114 (MainThread): Parsing macros/adapters/common.sql
+2021-08-01 21:55:32.346960 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-08-01 21:55:32.348550 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-08-01 21:55:32.349600 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-08-01 21:55:32.350798 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-08-01 21:55:32.521747 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.example
+
+2021-08-01 21:55:32.525926 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ebaf39cb-ec35-4cfb-8979-94e23e7e86a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ff5aa60>]}
+2021-08-01 21:55:32.529313 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ebaf39cb-ec35-4cfb-8979-94e23e7e86a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fe7e160>]}
+2021-08-01 21:55:32.529497 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 151 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-08-01 21:55:32.529965 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2021-08-01 21:55:32.532905 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fe42c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fe7e340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ff5afa0>]}
+2021-08-01 21:55:32.533140 (MainThread): Flushing usage events
