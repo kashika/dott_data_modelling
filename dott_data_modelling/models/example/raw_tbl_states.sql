@@ -1,5 +1,8 @@
--- {{ config(materialized='table') }}
---
+-- Sample command to run this script -
+-- dbt run --models raw_tbl_states
+
+{{ config(materialized='table') }}
+
 with states as(
  select *  from "DEMO_DB"."PUBLIC"."DATA_MODELLING_TEST_TBL_STATES1"
  UNION

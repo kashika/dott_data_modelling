@@ -1,3 +1,7 @@
+-- Sample command to run this script -
+-- dbt run --models raw_tbl_telemetry
+
+
 {{ config(materialized='table') }}
 
 with telemetry as(
